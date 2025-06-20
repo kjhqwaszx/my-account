@@ -12,7 +12,7 @@ import {
 
 import { store } from '@remote/firebase'
 import { COLLECTIONS } from '@constants/collection'
-import { Card } from '@/model/card'
+import { Card } from '@models/card'
 
 export async function getCards(pageParam?: QuerySnapshot<Card>) {
   const cardQuery =

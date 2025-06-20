@@ -9,7 +9,7 @@ import Top from '@shared/Top'
 import ListRow from '@shared/ListRow'
 import Flex from '@shared/Flex'
 import Text from '@shared/Text'
-import { Card } from '@/model/card'
+import { Card } from '@models/card'
 import { getCard } from '@remote/card'
 
 const FixedBottomButton = dynamic(() => import('@shared/FixedBottomButton'), {

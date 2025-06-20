@@ -26,7 +26,7 @@
       "@remote/*": ["src/remote/*"],
       "@constants": ["src/constants/index"],
       "@constants/*": ["src/constants/*"],
-      "@models/*": ["src/models/*"],
+      "@models/*": ["src/model/*"],
       "@utils/*": ["src/utils/*"],
       "@contexts/*": ["src/contexts/*"],
       "@hooks/*": ["src/hooks/*"]

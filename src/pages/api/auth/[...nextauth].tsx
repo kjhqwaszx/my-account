@@ -1,6 +1,6 @@
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
-import { User } from '@/model/user'
+import { User } from '@models/user'
 
 export default NextAuth({
   providers: [

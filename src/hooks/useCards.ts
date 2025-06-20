@@ -2,7 +2,7 @@ import { useQuery } from 'react-query'
 import { getCards } from '@remote/card'
 
 function useCards() {
-  return useQuery(['cards'], () => getCards(), {
+  return useQuery(['homeCards'], () => getCards(), {
     suspense: true,
   })
 }
