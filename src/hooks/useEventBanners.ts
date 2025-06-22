@@ -5,7 +5,7 @@ function useEventBanners() {
   // TODO: user 가 계좌를 보유하고있는가 ?
   return useQuery(
     ['event-banners'],
-    () => getEventBanners({ hasAccount: true }),
+    () => getEventBanners({ hasAccount: false }),
     {
       suspense: true,
     },

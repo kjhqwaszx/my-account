@@ -20,13 +20,13 @@ function EventPage({ initialEvent, id }: EventPageProps) {
       const terminated = isAfter(new Date(), parseISO(event.endDate))
 
       if (terminated) {
-        open({
-          title: `${event.title} 이벤트가 종료되었어요`,
-          description: '다음에 더 좋은 이벤트로 찾아오겠습니다',
-          onButtonClick: () => {
-            window.history.back()
-          },
-        })
+        // open({
+        //   title: `${event.title} 이벤트가 종료되었어요`,
+        //   description: '다음에 더 좋은 이벤트로 찾아오겠습니다',
+        //   onButtonClick: () => {
+        //     window.history.back()
+        //   },
+        // })
       }
     },
   })
@@ -35,7 +35,7 @@ function EventPage({ initialEvent, id }: EventPageProps) {
     return null
   }
 
-  // return <Preview data={data} mode="preview" />
+  return <Preview data={data} mode="preview" />
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
